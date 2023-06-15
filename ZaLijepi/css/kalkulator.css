@@ -1,0 +1,119 @@
+button#izracunaj{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0px;
+    border-radius: 30px;
+}
+
+input,
+select {
+    width: 19rem;
+    border-color: rgb(255, 83, 97, 0.5);
+    padding: 10px;
+    background: #f5f5f5;
+    height: 50px;
+    border-radius: 10px;
+
+}
+.kalk{
+    
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.childContainer{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondChildContainer{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 425px;
+    height: 550px;
+    background-color:rgb(234, 233, 227, 0.8);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 10px;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+#kvadratura{
+    padding: 10px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.racun{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+.kalkNaslov{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.total{
+    color: #ff5361;
+    font-size: 30px;
+}
+.slikaKalkulator{
+    border-radius: 10px;
+    margin-left: 30px;
+    height: 550px;
+    width: 90%;
+}
+
+
+
+@media (max-width: 700px) {
+.container{
+    width: 300px;
+    height: 550px;
+}
+#kvadratura, #materijal{
+    width: 250px;
+}
+button#izracunaj{
+    width: 100px;
+}
+
+}
+@media (max-width: 950px){
+    .childContainer{
+       display: none;
+    }
+    .secondChildContainer{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        font-size: 0.8rem;
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+   
+}

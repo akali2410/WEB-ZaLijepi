@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/kalkulator.css">
+    <link rel="stylesheet" href="./css/kontakt.css">
+    <link rel="stylesheet" href="./css/uposlenici.css">
+    <link rel="stylesheet" href="./css/pocetna.css">
+    <link rel="stylesheet" href="./css/onama.css">
+    <link rel="stylesheet" href="./css/dojmovi.css">
+    <title>ZaLijepi</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo"><a class="logo" href="#pocetna">ZaLijepi</a></div>
+        <a class="toggle-btn" id="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul class="menu" id="menu">
+                <li class="nav-item"><a class="navLink" href="#pocetna">Početna</a></li>
+                <li class="nav-item"><a class="navLink" href="#oNama">O nama</a></li>
+                <li class="nav-item"><a class="navLink" href="#uposlenici">Uposlenici</a></li>
+                <li class="nav-item"><a class="navLink" href="#kalkulator">Kalkulator</a></li>
+                <li class="nav-item"><a class="navLink" href="#kontakt">Kontakt</a></li>
+                <li class="nav-item"><a class="navLink" href="#dojmovi">Dojmovi</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <section id="pocetna">
+        <div class="slikaPocetna">
+            
+        </div>
+    </section>
+    <section id="oNama">
+        <div id="oNamaContainer">
+            <div class="slika"><img id="slikaCSS" src="./img/onama.jpg">
+            </div>
+            <div class="oNamaText">
+                <h1 class="oNamaNaslov">O NAMA</h1>
+                <h3>ZaLijepi</h3>
+                <p>
+                    Firma ZaLijepi.doo iz Sarajeva osnovana je 2022. godine. 
+                    Vršimo ugradnju pločica uz garantovan kvalitet. 
+                </p>
+                <p>
+                    Uz provjerenu kvalitetu naših stručnjaka za postavljane zidnih i podnih pločica sigurni smo da ce zadovoljstvo biti obostrano.
+                </p>
+                <h2>ZAŠTO SMO MI IDEALAN IZBOR?</h2>
+                <p>
+                    -Pristupačne cijene uz kvalitetan materijal
+                </p>
+                <p>
+                    -Idemo u korak sa trendovima i nudimo najmodernije usluge
+                </p>
+                <p>
+                    -Tim stručnih radnika i saradnika
+                </p>
+                <p>
+                    -Želimo da gradimo dugogodišnje i generacijske saradnje jer nam je stalo do naših korisnika
+                </p>
+                <p>
+                    -Kontinuirano radimo na usavršavanju zanata i profesionalnosti usluge na obostrano zadovoljstvo
+                </p>
+                <p>
+                    -Radimo na području Bosne i Hercegovine i nastojimo da proširimo svoje kapacitete na zemlje regiona
+                </p>
+                <a href="#kontakt" class="dugme">
+                    <button><p>Kontaktirajte nas</p></button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="uposlenici">
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/zare.jpg" class="anes" alt="Avatar" >
+                </div>
+                <div class="flip-card-back">
+                    <h1>Anes Pleh</h1>
+                    <p>Zanimanje: Keramičar</p>
+                    <p>Iskustvo: 15 godina</p>
+                    <p>Opis: Stručnjak za zidne pločice, geometrija mu nije najbolja strana, vaservaga najbolji prijatelj.</p>
+                    <p>Kontakt: 0603339613</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card-second-container">
+        <div class="flip-card-second">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./img/bob1.jpg" class="dzakma" alt="Avatar"  >
+                </div>
+                <div class="flip-card-back">
+                    <h1>Almir Džakmić</h1>
+                    <p>Zanimanje: Keramičar</p>
+                    <p>Iskustvo: 23 godine</p>
+                    <p>Opis: Stručnjak za podne pločice, voli popit ali uradi posao.</p>
+                    <p>Kontakt: 062555525</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="kalkulator">
+        <div class="mainContainer">
+            <div class="childContainer">
+                <img src="./img/slikaKalkulator.jpg" class="slikaKalkulator"alt="">
+            </div>
+            <div class="secondChildContainer">
+                <div class="container">
+                    <div class="kalk">
+                        <h1 class="kalkNaslov">IZRAČUNAJTE CIJENU RADOVA</h1>
+                        <input type="text" id="kvadratura"
+                        placeholder="Unesite broj kvadrata" required><br>
+                        <select id="materijal">
+                            <option selected disabled hidden>
+                                Materijal
+                            </option>
+                            <option value="32">Keramika</option>
+                            <option value="36">Porcelan</option>
+                        </select><br>
+                        <button id="izracunaj">Izračunaj</button>
+                        <div class="racun">
+                    <p class="kalkulatorTekst">Kompletna ugradnja keramike sa materijalom: <br>
+                    Ceresit ljepilo | Fuge | Silikon  <br> Pločice po izboru: <br> Keramika 32KM/m²<br>Porcelan 36KM/m²</p>
+                    <p id="totalKm" class="kalkulatorTekst">Iznosi:<p id="total" class="total">0</p> KM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt">
+        <div class="mainKontakt">
+            <div class="containerKontakt">
+                <form action="https://formspree.io/f/xbjejqkz" onsubmit="this.submit(); this.reset(); return false;" method="POST" id="form">
+                    <h3>KONTAKTIRAJTE NAS</h3>
+                <input type="text" name="Ime" id="ime" placeholder="Unesite Vaše ime" required>
+                <input type="email" name="Email" id="email" placeholder="Unesite Vašu e-mail adresu" required>
+                <input type="text" name="Broj" id="broj" placeholder="Unesite broj Vašeg telefona" required>
+                <textarea name="poruka" id="poruka" rows="4" placeholder="Kako Vam možemo pomoći?"></textarea>
+                <button type="submit" id="btn">Pošalji</button>
+                </form>
+            </div>
+            <div class="kontaktSlika">
+                <img src="./img/contactus.jpg" class="slikaKontakt" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="dojmovi">
+        <div class="dojmoviContainer">
+            <form action="https://formspree.io/f/mlekddng" onsubmit="this.submit(); this.reset(); return false;" method="POST" id="formDojam">
+                <h3>Da li ste zadvoljni našim radom, ili ste ipak imali neugodno iskustvo? Ostavite nam Vaš dojam a mi ćemo se potruditi da to ispravimo!</h3>
+            <input type="text" name="Ime" id="imeDojam" placeholder="Unesite Vaše ime" required>
+            <input type="email" name="Email" id="emailDojam" placeholder="Unesite Vašu e-mail adresu" required>
+            <textarea name="poruka" id="porukaDojam" rows="4" placeholder="Ostavite Vaš dojam: "></textarea>
+            <button type="submit" id="btnDojam">Pošalji</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="./js/navbar.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="./js/kalkulator.js"></script>
+</body>
+</html>

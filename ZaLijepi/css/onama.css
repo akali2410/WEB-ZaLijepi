@@ -1,0 +1,113 @@
+#oNamaContainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.slika{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+.oNamaText{
+    padding: 0 2rem;
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;     
+}
+
+.oNamaText button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dugme{
+    text-decoration: none;
+}
+
+
+#slikaCSS{
+    margin-top: 40px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+   
+}
+
+.oNamaText h1{
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 3px;
+    font-size: 40px;
+    display: flex;
+}
+.oNamaText h2{
+    margin-bottom: 7px;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    
+}
+.oNamaText h3{
+    margin-bottom: 7px;
+    margin-left: 3px;
+    font-size: 30px;
+    display: flex;
+}
+.oNamaText p{
+    margin-left: 3px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size: 1.25;
+    display: flex;
+    
+}
+
+
+@media (max-width: 950px){
+    .slika{
+       display: none;
+    }
+    .oNamaText{
+        height: 100vh;
+        width: 100vw;
+        
+        flex-direction: column;
+    }
+    
+    .oNamaText p{
+        text-align: left;
+        font-size: 0.95rem;
+        
+    }
+    .oNamaText h1{
+        font-size: 2rem;
+    }
+    .oNamaText h2{
+        font-size: 1.6rem;
+    }
+    .oNamaText h3{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 700px){
+    .oNamaText h1{
+        font-size: 1.1rem;
+    }
+    .oNamaText h2{
+        font-size: 0.7rem;
+    }
+    .oNamaText h3{
+        font-size: 0.9rem;
+    }
+    .oNamaText p{
+        font-size: 0.8rem;
+    }
+    .oNamaText button{
+        width: 15rem;
+    }
+}

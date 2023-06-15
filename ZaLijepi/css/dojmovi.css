@@ -1,0 +1,26 @@
+#formDojam{
+    width: 800px;
+    height: 500px;
+}
+#imeDojam, #emailDojam, #porukaDojam{
+    width: 700px;
+}
+
+.dojmoviContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 950px){
+    #formDojam{
+        font-size: 0.7rem;
+        width: 300px;
+        align-items: center;
+    }
+    #imeDojam, #emailDojam, #porukaDojam{
+        width: 250px;
+    }
+}
